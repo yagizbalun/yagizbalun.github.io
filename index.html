@@ -6,7 +6,7 @@
         <meta name="description" content="Yağız Balun - Mechanical Engineer Portfolio" />
         <meta name="author" content="Yağız Balun" />
         <title>Yağız Balun | Mechanical Engineer</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/YB.png" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -17,6 +17,53 @@
                 body {
                     padding-top: 72px !important;
                     padding-left: 0 !important;
+                }
+                section.resume-section {
+                    max-width: 100% !important;
+                    padding-left: 5rem !important;
+                    padding-right: 5rem !important;
+                }
+            }
+            
+            /* Tarihlerin font boyutunu ve stilini alt başlıklarla (subheading) aynı yapar */
+            .resume-section .flex-shrink-0 .text-primary {
+                font-size: 1.5rem;
+                font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            
+            /* Tüm bölümlerdeki açıklama yazılarının ve listelerin font boyutunu büyütür, okunaklılığı artırır */
+            .resume-section p, .resume-section ul:not(.list-inline) li {
+                font-size: 1.15rem;
+                line-height: 1.7;
+            }
+            
+            /* Tüm bölümlerdeki değişken devasa boşlukları kaldırıp, aralarındaki mesafeyi eşit ve sabit tutar */
+            section.resume-section {
+                min-height: auto !important;
+                padding-top: 4.5rem !important;
+                padding-bottom: 4.5rem !important;
+            }
+            
+            /* Sadece ilk açılış (About) ekranının tam sayfa olmasını sağlar, böylece p1.jpg aşağıda gizli kalır */
+            section#about {
+                min-height: 100vh !important;
+            }
+
+            /* Parallax Ara Bölmeler */
+            .parallax-divider {
+                height: 35vh;
+                min-height: 250px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+            }
+            @media (max-width: 991.98px) {
+                .parallax-divider {
+                    background-attachment: scroll; /* Mobilde performansı korumak için */
                 }
             }
         </style>
@@ -33,10 +80,13 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Research</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#professional-experience">Prof. Experience</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#technical-skills">Tech Skills</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#references">References</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,6 +108,9 @@
                     </div>
                 <p class="lead mb-4">Mechanical Engineering graduate from Dokuz Eylül University. Alumni of <b>Solar Team Solaris</b>. Passionate about 
                         motorsport engineering and vehicle dynamics. Currently focused on advanced automotive research.</p>
+                <div class="p-3 mb-4 bg-light border-start border-4 border-primary shadow-sm rounded" style="font-size: 1.1rem; color: #495057;">
+                    <i class="fas fa-info-circle text-primary me-2"></i><strong>Note:</strong> Some technical visuals and data have been intentionally distorted or blurred to maintain project confidentiality.
+                </div>
                 <div class="tech-stack mb-4">
                     <div class="subheading mb-2" style="font-size: 1.2rem;">Tech Stack</div>
                     <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-cogs me-1"></i> MSC Adams</span>
@@ -67,12 +120,12 @@
                     <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-network-wired me-1"></i> Simulink</span>
                 </div>
                 <div class="d-flex flex-wrap gap-3 mb-5">
-                    <a class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm" href="assets/CV_Yagiz_Balun.pdf" target="_blank"><i class="fas fa-file-pdf text-primary me-2"></i> Download CV</a>
-                    <a class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm" href="assets/Portfolio_Yagiz_Balun.pdf" target="_blank"><i class="fas fa-briefcase text-primary me-2"></i> Download Portfolio</a>
+                    <a class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm" href="assets/cv.pdf" target="_blank"><i class="fas fa-file-pdf text-primary me-2"></i> Download CV</a>
+                    <a class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm" href="assets/port.pdf" target="_blank"><i class="fas fa-briefcase text-primary me-2"></i> Download Portfolio</a>
                 </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <div class="parallax-divider" style="background-image: url('assets/img/p1.jpg');"></div>
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">MOTORSPORT & RACING EXPERIENCE</h2>
@@ -88,7 +141,7 @@
                         <div class="flex-shrink-0">
                             <span class="text-primary">2023 - 2025</span>
                             <div class="mt-3">
-                                <img src="assets/img/rally.jpeg" alt="Rally Marshal Experience" class="img-fluid rounded shadow-sm" style="max-width: 280px;" />
+                                <img src="assets/img/rally.jpeg" alt="Rally Marshal Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
                             </div>
                         </div>
                     </div>
@@ -101,7 +154,7 @@
                         <div class="flex-shrink-0">
                             <span class="text-primary">May 2025</span>
                             <div class="mt-3">
-                                <img src="assets/img/albi.jpg" alt="Albi Eco Race Experience" class="img-fluid rounded shadow-sm" style="max-width: 280px;" />
+                                <img src="assets/img/albi.jpg" alt="Albi Eco Race Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
                             </div>
                         </div>
                     </div>
@@ -114,7 +167,7 @@
                         <div class="flex-shrink-0">
                             <span class="text-primary">September 2024</span>
                             <div class="mt-3">
-                                <img src="assets/img/scru.jpeg" alt="Scrutineer Experience" class="img-fluid rounded shadow-sm" style="max-width: 280px;" />
+                                <img src="assets/img/scru.jpeg" alt="Scrutineer Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
                             </div>
                         </div>
                     </div>
@@ -128,7 +181,7 @@
                         <div class="flex-shrink-0">
                             <span class="text-primary">September 2022</span>
                             <div class="mt-3">
-                                <img src="assets/img/imola.jpg" alt="Italian Solar Challenge Experience" class="img-fluid rounded shadow-sm" style="max-width: 280px;" />
+                                <img src="assets/img/imola.jpg" alt="Italian Solar Challenge Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
                             </div>
                         </div>
                     </div>
@@ -141,67 +194,374 @@
                         <div class="flex-shrink-0">
                             <span class="text-primary">September 2022</span>
                             <div class="mt-3">
-                                <img src="assets/img/iesc.jpg" alt="iLumen European Solar Challenge Experience" class="img-fluid rounded shadow-sm" style="max-width: 280px;" />
+                                <img src="assets/img/iesc.jpg" alt="iLumen European Solar Challenge Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <section class="resume-section" id="education">
+            <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Dokuz Eylül University</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Mechanical Engineering</div>
+                            <h3 class="mb-0">S11 Suspension Revision & Track Data Validation</h3>
+                            <div class="subheading mb-3">Toolkit: SolidWorks, ADAMS View, ANSYS, Strain Gauges, MATLAB, Python</div>
+                            <p><b>The Challenge: Track Failure Under Time Pressure</b><br>During the final track tests in Izmir prior to the SASOL African Solar Challenge, the S11's upper A-arm suffered a structural failure after striking a specific track bump. With strict time constraints before the race, an immediate and reliable engineering intervention was required.</p>
+                            <p><b>Simulation & Geometric Optimization</b><br>To replicate the failure conditions, I modeled the exact track anomaly in MSC ADAMS to extract the precise dynamic bump loads. Using ANSYS Static Structural, I identified the severe stress concentration at the fracture point. Without altering the original 7075-T6 Aluminum material, I structurally redesigned the component's geometry in SolidWorks to optimize stress distribution. The revised A-arm was manufactured and successfully endured the extreme conditions of the SASOL endurance race without any issues.</p>
+                            <p><b>Empirical Track Validation</b><br>Driven to empirically validate the numerical simulation beyond just surviving the race, I initiated a physical testing phase for the subsequent Albi Eco Race. I instrumented the redesigned A-arm by applying a quarter-bridge strain gauge exactly at the previous failure hotspot. By configuring a custom data acquisition system, I successfully logged live dynamic stress data on the track, effectively closing the loop between Multibody Dynamics (MBD), Finite Element Analysis (FEA), and real-world telemetry.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Graduated: 2025</span></div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/1-1.png" alt="ADAMS Model" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/1-2.png" alt="Bump Force Plot" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/1-3.png" alt="ANSYS Stress Analysis" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/1-4.png" alt="Strain Gauge Setup" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/1-5.png" alt="Empirical Data Plot" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/1-6.png" alt="Track Validation" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">S14 Suspension Kinematics R&D for Solar Electric Vehicle Suspension</h3>
+                            <div class="subheading mb-3">Toolkit:MSC ADAMS Car, SolidWorks</div>
+                    
+                            <p><b>The Challenge:</b><br> Engineered the double wishbone suspension kinematics for the S14 vehicle. The primary mechanical constraint was adapting the geometry to a reduced track width compared to the previous generation, while strictly maintaining the extreme energy conservation demands of endurance racing.</p>
+                            <p><b>Kinematic Optimization:</b> <br>Conducted extensive Multibody Dynamics (MBD) simulations in MSC ADAMS/Car. Iteratively tuned the suspension hardpoints to resolve the packaging constraints of the narrower track width, preventing aggressive angle variations during suspension articulation.</p>
+                            <p><b>The Impact:</b><br> Successfully minimized bump steer (toe angle variance) and optimized dynamic camber across the full wheel travel. This geometric precision prevented tire scrubbing and drastically reduced rolling resistance, directly maximizing the vehicle's overall energetic efficiency.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                <img src="assets/img/2-1.png" alt="S14 Kinematics 1" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                <img src="assets/img/2-2.png" alt="S14 Kinematics 2" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                <img src="assets/img/2-3.png" alt="S14 Kinematics 3" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                <img src="assets/img/2-4.png" alt="S14 Kinematics 4" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Electric Hub Motor Bearing Life Assesment</h3>
+                            <div class="subheading mb-3">Toolkit: OptimumLap, SKF Simpro Quick, Matlab, Python</div>
+                            <p><b>The Research:</b> Investigated the real-world service life of electric hub motor bearings for solar endurance racing. This study forms the basis of an academic paper currently under peer review for publication in a scientific journal.</p>
+                            <p><b>Modeling & Track Validation:</b> Mapped the Albi Eco Race circuit in OptimumLap to calculate theoretical velocity and acceleration profiles based on ISO 281 standards. Successfully synchronized a simulated lap with live GPS telemetry. Extracted real-world dynamic loads using strain gauges, utilizing MATLAB for advanced signal filtering and data processing.</p>
+                            <p><b>Findings & Optimization:</b> Processed telemetry revealed critical dynamic load spikes—primarily peak lateral forces occurring at corner apexes—that standard theoretical models failed to predict. To counter these loads while strictly maximizing vehicle efficiency, I proposed the implementation of hybrid ceramic bearings to significantly minimize rolling resistance and extend service life without weight penalties.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-3">
+                                <img src="assets/img/3-1.jpg" alt="Electric Hub Motor Bearing Life 1" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                                <img src="assets/img/3-2.png" alt="Electric Hub Motor Bearing Life 2" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Wheel Hub Design & Efficiency Test Rig</h3>
+                            <p class="mt-3"><b>Experimental Testing:</b> Developed a custom drum test rig driven by a variable-speed motor. I empirically measured the dynamic power loss and rolling resistance of the wheel assembly.</p>
+                            <p><b>Mechanical Optimization:</b> The live power data proved that high internal friction was caused by the bearing's tight tolerances. I modified the existing hub by applying a slip-fit bearing tolerance, drastically reducing rolling resistance. To safely secure the slip-fit bearing in place, I engineered and integrated a custom mechanical retainer plate with suspension subgroup of Solar Team Solaris.</p>
+                            <p><b>Strategic Pivot:</b> Although we had already designed a completely new, lightweight hub from scratch, the test data drove a strategic decision. The slip-fit revision on the existing hub provided sufficient efficiency gains, rendering the costly manufacturing of the new design unnecessary. This data-driven pivot maximized vehicle energy conservation while strictly meeting project timeline and budget constraints.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2023</span>
+                            <div class="d-flex gap-2">
+                                <img src="assets/img/4-2.png" alt="Wheel Hub Design 2" class="rounded shadow-sm" style="width: 240px; height: 328px; object-fit: cover;" />
+                                <div class="d-flex flex-column gap-2">
+                                    <img src="assets/img/4-1.jpg" alt="Wheel Hub Design 1" class="rounded shadow-sm" style="width: 240px; height: 160px; object-fit: cover;" />
+                                    <img src="assets/img/4-3.png" alt="Wheel Hub Design 3" class="rounded shadow-sm" style="width: 240px; height: 160px; object-fit: cover;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">EV Powertrain Simulation & Energy Management (Simulink)</h3>
+                            <div class="subheading mb-3">Technologies Used: MATLAB / Simulink</div>
+                            <p><b>Context:</b> Developed as a comprehensive final project for the "Hybrid and Electric Vehicle Technology" course.</p>
+                            <p><b>The Objective:</b> Engineered a dynamic simulation model for a 4x4 electric mini-vehicle to analyze powertrain requirements and battery degradation characteristics under specific driving cycles provided in the course curriculum.</p>
+                            <p><b>System Modeling:</b> Built a comprehensive "flat-map" Simulink model integrating longitudinal vehicle dynamics (aerodynamic drag, rolling resistance) with a detailed electrical domain. The model processed SOC-dependent functions including Open Circuit Voltage (OCV) and Internal Resistance (R) to monitor real-time battery behavior.</p>
+                            <p><b>Technical Analysis:</b> Calculated critical performance metrics including motor torque/power demands, battery State of Charge (SOC) depletion, and voltage efficiency.</p>
+                            <p><b>Regenerative Braking:</b> Integrated a mathematical sub-model to evaluate the regenerative energy potential at the wheels, quantifying the energy recovery capabilities of the EV system during deceleration phases.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2024</span>
+                            <div class="d-flex flex-column gap-3">
+                                <img src="assets/img/5-1.png" alt="EV Powertrain Simulation 1" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                                <img src="assets/img/5-2.png" alt="EV Powertrain Simulation 2" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Structural Analysis of a 2D Truss System (ANSYS APDL)</h3>
+                            <div class="subheading mb-3">Technologies Used: ANSYS APDL (Mechanical APDL)</div>
+                            <p><b>Context:</b> Developed as a high-fidelity final project for the "Introduction to Finite Element Method" course.</p>
+                            <p><b>The Objective:</b> Designed and analyzed a 2D truss carrier system to evaluate its structural integrity under static loading conditions, comparing numerical Finite Element Analysis (FEA) results with analytical hand calculations.</p>
+                            <p><b>FEA Methodology:</b> Utilized BEAM188 elements to construct the system's stiffness matrix. Defined precise material properties (E, ν) and cross-sectional geometries within the APDL environment. Applied boundary conditions and nodal forces to simulate real-world structural constraints.</p>
+                            <p><b>Results & Validation:</b> Performed a comprehensive analysis of nodal displacements and axial stresses. Successfully validated the numerical results against theoretical solutions, achieving high correlation in deformation patterns and ensuring the system's factor of safety within engineering limits.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/6-1.png" alt="Truss Analysis 1" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/6-2.png" alt="Truss Analysis 2" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/6-3.png" alt="Truss Analysis 3" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/6-4.png" alt="Truss Analysis 4" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">6-DOF Modular Stewart Platform Prototype (BSc Senior Project)</h3>
+                            <p class="mt-3"><b>Grant & Recognition:</b> Secured the TÜBİTAK 2209-A National Research Grant (Project No: 1919B012304192) as the Project Team Leader.</p>
+                            <p><b>Role & Leadership:</b> Authored the comprehensive research proposal, managed the project budget, and directed a multi-disciplinary team through the full R&D lifecycle—from conceptualization to physical realization.</p>
+                            <p><b>Kinematics & Control:</b> Developed the complex inverse kinematics algorithms in MATLAB to define the platform's motion workspace. Modeled and simulated the control architecture in Simulink to ensure precise 6-DOF (Degrees of Freedom) trajectory tracking.</p>
+                            <p><b>Execution:</b> Led the complete mechanical design in SolidWorks, overseen the manufacturing of modular components, and executed the final assembly and system integration.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2024</span>
+                            <div class="d-flex gap-2">
+                                <img src="assets/img/8-2.png" alt="Stewart Platform Prototype Main" class="rounded shadow-sm" style="width: 240px; height: 328px; object-fit: cover;" />
+                                <div class="d-flex flex-column gap-2">
+                                    <img src="assets/img/8-1.png" alt="Stewart Platform Prototype 1" class="rounded shadow-sm" style="width: 240px; height: 120px; object-fit: cover;" />
+                                    <img src="assets/img/7-1.png" alt="Stewart Platform Prototype 2" class="rounded shadow-sm" style="width: 240px; height: 200px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p2.jpg');"></div>
+            <section class="resume-section" id="professional-experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Professional Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Mechanical Maintenance Engineer</h3>
+                            <div class="subheading mb-3">Johnson Electric (formerly Stackpole International)</div>
+                            <p><b>Operational Excellence:</b> Managed predictive and corrective maintenance strategies for high-volume automotive production lines, specifically focusing on the manufacturing of OEM oil pumps for global automotive leaders.</p>
+                            <p><b>Efficiency Optimization:</b> Spearheaded technical interventions to minimize machine downtime and enhance overall factory efficiency through data-driven troubleshooting.</p>
+                            <p><b>Systems Management:</b> Utilized ERP systems to track spare parts inventory, schedule maintenance cycles, and ensure seamless technical operations within a Tier-1 automotive supplier environment.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Oct 2022 – June 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Machining & R&D Intern</h3>
+                            <div class="subheading mb-3">Gera Crane</div>
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-2"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Gained hands-on experience in high-precision machining processes, including CNC programming (G-code) and technical drawing interpretation for heavy-duty crane components.</li>
+                                <li><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Assisted in the development and testing phases of new mechanical assemblies, bridging the gap between theoretical design and shop-floor feasibility.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Summer 2024 & 2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Casting Intern</h3>
+                            <div class="subheading mb-3">Özen Casting</div>
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-2"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Observed industrial-scale casting operations, focusing on mold preparation, melting processes, and post-casting quality control cycles.</li>
+                                <li><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Developed a fundamental understanding of material behavior and structural integrity through the monitoring of casting defect analysis and solidification stages.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Summer 2023</span></div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <section class="resume-section" id="skills">
+            <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Technical Tools & Software</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fas fa-car"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-cogs"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-tools"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Core Competencies</div>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Vehicle Dynamics & Suspension Design</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Multi-Body Simulation (ADAMS, MATLAB)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Experimental Data Acquisition (Strain Gauges)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Manufacturing Processes & R&D</li>
-                    </ul>
+                    <h2 class="mb-5">Scientific Publications & Research</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Experimental Validation of Service Life Prediction of Ball Bearings in Solar Radial Flux Hub Motors Using Real-Time Track Data</h3>
+                            <div class="subheading mb-3">Status: Under Peer Review for Scientific Publication</div>
+                            <p><b>Role:</b> Corresponding & First Author: Y. Balun | Co-Authors: B. Orhan, A. Gören (Supervisor)</p>
+                            <p><b>Core Contribution:</b> Developed a high-fidelity methodology to correlate theoretical ISO 281 standards with real-world dynamic load spikes. By synchronizing OptimumLap simulations with live GPS telemetry and MATLAB filtered strain-gauge data, the study identifies critical axial and lateral forces at corner apexes to optimize bearing selection.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Dynamic Load Validation of Solar Electric Vehicle Suspensions Using In-Race Telemetry</h3>
+                            <div class="subheading mb-3">Status: Manuscript in Progress / Working Title</div>
+                            <p><b>Role:</b> Corresponding & First Author: Y. Balun | Co-Authors: M. Kip, M. İzci, A. Gören (Supervisor)</p>
+                            <p><b>Core Contribution:</b> Establishing an end-to-end validation loop for solar racing suspension systems. This research focuses on the transition from MSC ADAMS (MBD) and ANSYS (FEA) to empirical track validation, quantifying the variance between numerical stress predictions and actual in-race telemetry.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Composite Leaf Spring Applications on Solar Vehicle</h3>
+                            <div class="subheading mb-3">Status: Published Article (Putech Composites, Issue 75)</div>
+                            <p><b>Role:</b> Formally acknowledged for technical contributions | Authors: G. D. Özdeniz, A. Gören</p>
+                            <p><b>Contribution:</b> Provided technical insights and engineering support for the integration and performance analysis of composite suspension elements in solar-powered racing vehicles.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Solaris 13 Solar Vehicle Design and Energy Consumption Optimization</h3>
+                            <div class="subheading mb-3">Status: BSc Thesis Contribution (Formally Acknowledged)</div>
+                            <p><b>Role:</b> Technical Consultant & Test Rig Developer | Author: B. İpek | Supervisor: A. Gören</p>
+                            <p><b>Contribution:</b> Designed and manufactured the custom physical test rig utilized for critical data acquisition. Provided design feasibility consulting and technical validation to support the energy optimization strategies of the Solaris 13 vehicle.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p3.jpg');"></div>
+            <section class="resume-section" id="technical-skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Technical Skills</h2>
+                    
+                    <div class="mb-5">
+                        <div class="subheading mb-3">CAD & Structural Engineering</div>
+                        <p><img src="assets/img/SW.png" alt="SolidWorks" class="me-2" style="width: 60px; height: 60px; object-fit: contain; vertical-align: middle;"><b>SolidWorks:</b> Advanced Part Design, Complex Assemblies, and Technical Drafting (GD&T).</p>
+                        <p><img src="assets/img/catia.png" alt="Catia V5" class="me-2" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;"><b>Catia V5:</b> Basic Solid Part Modeling.</p>
+                        <p><img src="assets/img/ansys.png" alt="ANSYS" class="me-2" style="width: 54px; height: 54px; object-fit: contain; vertical-align: middle;"><b>ANSYS (Workbench, APDL & Granta Selector):</b> Static Structural and Rigid Dynamics simulations; script-based FEA modeling via Mechanical APDL, and advanced material selection.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="subheading mb-3">Vehicle Dynamics & Race Strategy</div>
+                        <p><img src="assets/img/optimum.svg" alt="OptimumLap" class="me-2" style="width: 54px; height: 54px; object-fit: contain; vertical-align: middle;"><b>OptimumLap:</b> Full-circuit energy consumption profiling, dynamic acceleration mapping, and strategic optimization for endurance racing.</p>
+                        <p><img src="assets/img/adams.png" alt="MSC ADAMS" class="me-2" style="width: 54px; height: 54px; object-fit: contain; vertical-align: middle;"><b>MSC ADAMS / Car:</b> Suspension kinematics and multibody dynamics (MBD) analysis.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="subheading mb-3">Programming & Data Science</div>
+                        <p><i class="fab fa-python text-primary me-1" style="font-size: 36px; vertical-align: middle;"></i> <img src="assets/img/matlab.png" alt="MATLAB" class="me-2" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;"><b>Python & MATLAB Integration:</b> Developing advanced signal processing and control algorithms. Utilizing Python with a MATLAB kernel for automated, high-efficiency data processing and cross-platform graphical visualization.</p>
+                        <p><img src="assets/img/simulink.png" alt="Simulink" class="me-2" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;"><b>Simulink & Simscape:</b> Model-based systems engineering and EV powertrain simulations.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="subheading mb-3">Instrumentation & Data Acquisition</div>
+                        <p><i class="fas fa-plug text-primary me-2" style="font-size: 28px; vertical-align: middle;"></i><b>Sensor Application & Wiring:</b> Hands-on expertise in precision Strain Gauge (SG) application, including strict surface preparation, bonding, and custom physical wiring for dynamic load measurement.</p>
+                        <p><i class="fas fa-microchip text-primary me-2" style="font-size: 28px; vertical-align: middle;"></i><b>DAQ System Integration:</b> End-to-end physical integration of data acquisition hardware to vehicle components. Proficient in managing power distribution, sensor connectivity, and hardware-in-the-loop setups.</p>
+                        <p><i class="fas fa-chart-line text-primary me-2" style="font-size: 28px; vertical-align: middle;"></i><b>Data Processing & Interpretation:</b> Extracting raw track telemetry and translating physical signals into actionable engineering insights via advanced signal filtering and data correlation (MATLAB/Python).</p>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="courses">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Beyond engineering, I am a motorsports enthusiast and active rally marshal. I enjoy sim racing to explore vehicle dynamics in a digital environment.</p>
-                    <p class="mb-0">I have a keen interest in academic writing and keeping up with the latest advancements in automotive technology and solar energy applications.</p>
+                    <h2 class="mb-5">Notable Academic Courses</h2>
+                    <div class="subheading mb-4">Dokuz Eylül University · Mechanical Engineering</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Hybrid and Electric Vehicle Technology</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Introduction to Finite Elements</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Internal Combustion Engines</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Composites Manufacturing Technology</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Fuels and Combustion</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Basic Principles of Motor Vehicles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p4.jpg');"></div>
+            <section class="resume-section" id="references">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">References</h2>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Assoc. Prof. Dr. Aytaç Gören</h3>
+                            <div class="subheading mb-2">Department of Mechanical Engineering at Dokuz Eylül University, Project Manager of Solaris</div>
+                            <p><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:aytac.goren@deu.edu.tr" class="text-primary text-lowercase fw-bold text-decoration-none">aytac.goren@deu.edu.tr</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Prof. Dr. Binnur GÖREN KIRAL</h3>
+                            <div class="subheading mb-2">Department of Mechanical Engineering at Dokuz Eylül University, Senior Project Supervisor</div>
+                            <p><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:binnur.goren@deu.edu.tr" class="text-primary text-lowercase fw-bold text-decoration-none">binnur.goren@deu.edu.tr</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Assoc. Prof. Dr. Mustafa Umut Karaoğlan</h3>
+                            <div class="subheading mb-2">Department of Mechanical Engineering at Dokuz Eylül University, Automotive Division</div>
+                            <p><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:mustafa.karaoglan@deu.edu.tr" class="text-primary text-lowercase fw-bold text-decoration-none">mustafa.karaoglan@deu.edu.tr</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Mehmet Serkan İnceer</h3>
+                            <div class="subheading mb-2">Maintenance Supervisor at Johnson Electric</div>
+                            <p><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:sinceer@johnsonelectric.com" class="text-primary text-lowercase fw-bold text-decoration-none">sinceer@johnsonelectric.com</a></p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <section class="resume-section" id="awards">
+            <section class="resume-section" id="certifications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Research & Publications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-file-alt text-warning"></i></span>
-                            Experimental Validation of Service Life Prediction of Ball Bearings in Solar Radial Flux Hub Motors - <b>(Under Review)</b>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            Member of TOSFED (Turkish Automobile Sports Federation)
-                        </li>
-                    </ul>
+                    <h2 class="mb-5">Certifications & Licenses</h2>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">CSWA: Certified SOLIDWORKS Associate – Mechanical Design</h3>
+                            <div class="subheading mb-3">Issuing Organization: Dassault Systèmes</div>
+                            <p>Validates expertise in 3D solid modeling, advanced assembly management, and industry-standard engineering drafting (GD&T).</p>
+                            <a href="assets/cswa.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>View Certificate</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">CSWA-S: Certified SOLIDWORKS Associate – Simulation</h3>
+                            <div class="subheading mb-3">Issuing Organization: Dassault Systèmes</div>
+                            <p>Validates professional proficiency in Finite Element Analysis (FEA) methodologies, including the assessment of Stress, Strain, and Factor of Safety (FoS).</p>
+                            <a href="assets/cswas.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IELTS Academic</h3>
+                            <div class="subheading mb-3">Issuing Organization: British Council</div>
+                            <p>Achieved an Overall Band Score of 7.0.</p>
+                            <a href="assets/ielts.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">TOSFED Grade C Observer License</h3>
+                            <div class="subheading mb-3">Issuing Organization: Turkish Automobile Sports Federation (TOSFED)</div>
+                            <p>Official national license for technical observation and track officiating in sanctioned motorsport events.</p>
+                            <a href="assets/tosfed.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>View License</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
