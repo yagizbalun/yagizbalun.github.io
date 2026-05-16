@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Yağız Balun - Makine Mühendisi Portfolyosu" />
+        <meta name="author" content="Yağız Balun" />
+        <title>Yağız Balun | Makine Mühendisi</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/YB.png" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Temanın sol menüye göre ayarlanmış boşluklarını üst menüye göre düzeltir */
+            @media (min-width: 992px) {
+                body {
+                    padding-top: 72px !important;
+                    padding-left: 0 !important;
+                }
+                section.resume-section {
+                    max-width: 100% !important;
+                    padding-left: 5rem !important;
+                    padding-right: 5rem !important;
+                }
+            }
+            
+            /* Tarihlerin font boyutunu ve stilini alt başlıklarla (subheading) aynı yapar */
+            .resume-section .flex-shrink-0 .text-primary {
+                font-size: 1.5rem;
+                font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            
+            /* Tüm bölümlerdeki açıklama yazılarının ve listelerin font boyutunu büyütür, okunaklılığı artırır */
+            .resume-section p, .resume-section ul:not(.list-inline) li {
+                font-size: 1.15rem;
+                line-height: 1.7;
+            }
+            
+            /* Tüm bölümlerdeki değişken devasa boşlukları kaldırıp, aralarındaki mesafeyi eşit ve sabit tutar */
+            section.resume-section {
+                min-height: auto !important;
+                padding-top: 4.5rem !important;
+                padding-bottom: 4.5rem !important;
+            }
+            
+            /* Sadece ilk açılış (About) ekranının tam sayfa olmasını sağlar, böylece p1.jpg aşağıda gizli kalır */
+            section#about {
+                min-height: 100vh !important;
+            }
+
+            /* Parallax Ara Bölmeler */
+            .parallax-divider {
+                height: 35vh;
+                min-height: 250px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+            }
+            @media (max-width: 991.98px) {
+                .parallax-divider {
+                    background-attachment: scroll; /* Mobilde performansı korumak için */
+                }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="topNav">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand js-scroll-trigger d-flex align-items-center" href="#page-top">
+                    <img class="img-fluid img-profile rounded-circle me-2" src="assets/img/profile.jpg" alt="Yağız Balun" style="width: 40px; height: 40px; object-fit: cover;" />
+                    <span>Yağız Balun</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Hakkımda</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Yarış Deneyimi</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projeler</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#professional-experience">İş Deneyimi</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Yayınlar</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#technical-skills">Beceriler</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Dersler</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Sertifikalar</a></li>
+                        <li class="nav-item mt-2 mt-lg-0 ms-lg-4"><a class="nav-link" href="index.html" style="border: 1px solid rgba(255,255,255,0.5); border-radius: 20px; padding: 0.5rem 1rem !important;"><i class="fas fa-globe me-1"></i> EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid p-0">
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Yağız
+                        <span class="text-primary">Balun</span>
+                    </h1>
+                    <div class="subheading mb-4">
+                        Eskişehir · Türkiye · 
+                        <a href="mailto:yagizbalun2001@gmail.com" class="text-lowercase">yagizbalun2001@gmail.com</a>
+                    </div>
+                    <div class="social-icons mb-5">
+                        <a class="social-icon" href="https://www.linkedin.com/in/yagizbalun/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://orcid.org/0009-0000-0905-5751" target="_blank"><i class="fab fa-orcid"></i></a>
+                    </div>
+                <p class="lead mb-4">Dokuz Eylül Üniversitesi Makine Mühendisliği mezunu. <b>Solar Team Solaris</b> eski üyesi. Motor sporları mühendisliği ve araç dinamiği konularına tutkuyla bağlı. Şu anda ileri seviye otomotiv araştırmalarına odaklanıyor.</p>
+                <div class="p-3 mb-4 bg-light border-start border-4 border-primary shadow-sm rounded" style="font-size: 1.1rem; color: #495057;">
+                    <i class="fas fa-info-circle text-primary me-2"></i><strong>Not:</strong> Bazı teknik görseller ve veriler, proje gizliliğini korumak amacıyla kasıtlı olarak bozulmuş veya bulanıklaştırılmıştır.
+                </div>
+                <div class="p-3 mb-4 bg-light border-start border-4 border-info shadow-sm rounded" style="font-size: 1rem; color: #495057;">
+                    <i class="fas fa-robot text-info me-2"></i><strong>Gemini Çeviri Notu:</strong> Sayfanın Türkçesi tamamen Gemini yapay zeka asistanı ile çevrilmiştir, bazı çeviri hataları içerebilir.
+                </div>
+                <div class="tech-stack mb-4">
+                    <div class="subheading mb-2" style="font-size: 1.2rem;">Teknoloji Yığını</div>
+                    <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-cogs me-1"></i> MSC Adams</span>
+                    <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-cube me-1"></i> Solidworks</span>
+                    <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-project-diagram me-1"></i> ANSYS</span>
+                    <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-laptop-code me-1"></i> MATLAB</span>
+                    <span class="badge rounded-pill bg-primary fs-6 fw-normal px-3 py-2 me-2 mb-2"><i class="fas fa-network-wired me-1"></i> Simulink</span>
+                </div>
+                <div class="d-flex flex-wrap gap-3 mb-5">
+                    <a class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm" href="assets/cv.pdf" target="_blank"><i class="fas fa-file-pdf text-primary me-2"></i> Özgeçmişi İndir</a>
+                    <a class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm" href="assets/port.pdf" target="_blank"><i class="fas fa-briefcase text-primary me-2"></i> Portfolyoyu İndir</a>
+                </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p1.jpg');"></div>
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">MOTOR SPORLARI VE YARIŞ DENEYİMİ</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Etap Güvenlik Şefi ve Etap Gözetmeni</h3>
+                            <div class="subheading mb-3">Türkiye Ralli / Tırmanma Şampiyonası</div>
+                            <ul>
+                                <li>Etap Güvenlik Şefi: Buharkent Tırmanma (2025)</li>
+                                <li>Etap Gözetmeni: Türkiye Ralli Şampiyonası: Ege Rallisi, Marmaris Rallisi (2023, 2024, 2025)</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">2023 - 2025</span>
+                            <div class="mt-3">
+                                <img src="assets/img/rally.jpeg" alt="Rally Marshal Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Solar Team Solaris Mezunu ve Teknik Danışmanı</h3>
+                            <div class="subheading mb-3">Albi Eco Race (Circuit d’Albi, France)</div>
+                            <p>Yarış operasyonları sırasında stratejik rehberlik sağlayarak teknik danışman olarak görev aldım. Ayrıca, akademik araştırma amacıyla gerçek zamanlı pist verilerini toplamak için araç içi veri toplama (DAQ) sistemini yapılandırıp entegre ettim.</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">Mayıs 2025</span>
+                            <div class="mt-3">
+                                <img src="assets/img/albi.jpg" alt="Albi Eco Race Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Teknik Kontrolör ve Gönüllü</h3>
+                            <div class="subheading mb-3">iLumen European Solar Challenge (Circuit Zolder, Belgium)</div>
+                            <p>Etkinliğin çeşitli operasyonel aşamalarına katıldım. Teknik uygunluk için mekanik kontrolör olarak görev yaptım, pist güvenliği için dinamik test gözetmeni olarak rol aldım ve şarj alanında operasyonel görevler üstlendim.</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">Eylül 2024</span>
+                            <div class="mt-3">
+                                <img src="assets/img/scru.jpeg" alt="Scrutineer Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Solar Team Solaris Mekanik Takım Lideri</h3>
+                            <div class="subheading mb-3">Italian Solar Challenge (Autodromo Imola, Italy)</div>
+                            <p>Benzer mekanik liderlik ve pit garajı görevlerini üstlendim. Yarış boyunca takımı etkili bir şekilde koordine ederek genel klasmanda 3. sırayı elde etmemize büyük katkı sağladım.</p>
+
+                        </div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">Eylül 2022</span>
+                            <div class="mt-3">
+                                <img src="assets/img/imola.jpg" alt="Italian Solar Challenge Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Solar Team Solaris Mekanik Takım Lideri</h3>
+                            <div class="subheading mb-3">iLumen European Solar Challenge (Circuit Zolder, Belgium)</div>
+                            <p>Avrupa Güneş Arabaları Yarışı (iESC) boyunca mekanik takımına liderlik ettim. Pit garajı operasyonlarından, rutin araç bakımından ve aracın pistte sorunsuz ilerlemesini sağlamak için diğer teknik departmanlarla koordinasyondan sorumluydum.</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">Eylül 2022</span>
+                            <div class="mt-3">
+                                <img src="assets/img/iesc.jpg" alt="iLumen European Solar Challenge Experience" class="img-fluid rounded shadow-sm" style="max-width: 560px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projeler</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">S11 Süspansiyon Revizyonu ve Pist Verisi Doğrulaması</h3>
+                            <div class="subheading mb-3">Araçlar: SolidWorks, ADAMS View, ANSYS, Strain Gauges, MATLAB, Python</div>
+                            <p><b>Zorluk: Zaman Baskısı Altında Pistte Hasar</b><br>SASOL Afrika Güneş Arabaları Yarışı öncesi İzmir'deki son pist testleri sırasında, S11'in üst salıncağı (A-arm) belirli bir pist tümseğine çarptıktan sonra yapısal bir hasar aldı. Yarış öncesindeki kısıtlı zaman dilimi nedeniyle, anında ve güvenilir bir mühendislik müdahalesi gerekiyordu.</p>
+                            <p><b>Simülasyon ve Geometrik Optimizasyon</b><br>Kırılma koşullarını tekrarlamak için, o tam pist anomalisini MSC ADAMS'ta modelleyerek kesin dinamik tümsek yüklerini elde ettim. ANSYS Static Structural kullanarak, kırılma noktasındaki şiddetli stres yığılmasını tespit ettim. Orijinal 7075-T6 Alüminyum malzemesini değiştirmeden, stres dağılımını optimize etmek için bileşenin geometrisini SolidWorks'te yeniden tasarladım. Revize edilen salıncak üretildi ve SASOL dayanıklılık yarışının aşırı koşullarına hiçbir sorun yaşamadan başarıyla dayandı.</p>
+                            <p><b>Deneysel Pist Doğrulaması</b><br>Sayısal simülasyonu sadece yarışı atlatmanın ötesinde ampirik olarak doğrulamak amacıyla, bir sonraki Albi Eco Race için fiziksel bir test aşaması başlattım. Yeniden tasarlanan salıncağı, tam önceki kırılma noktasına çeyrek köprü strain gauge (gerinim ölçer) uygulayarak donattım. Özel bir veri toplama sistemi yapılandırarak, pistte canlı dinamik stres verilerini başarıyla kaydettim ve Çoklu Cisim Dinamiği (MBD), Sonlu Elemanlar Analizi (FEA) ve gerçek dünya telemetrisi arasındaki döngüyü etkili bir şekilde tamamladım.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/1-1.png" alt="ADAMS Model" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/1-2.png" alt="Bump Force Plot" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/1-3.png" alt="ANSYS Stress Analysis" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/1-4.png" alt="Strain Gauge Setup" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/1-5.png" alt="Empirical Data Plot" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/1-6.png" alt="Track Validation" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Güneş Enerjili Elektrikli Araç için S14 Süspansiyon Kinematiği Ar-Ge Çalışması</h3>
+                            <div class="subheading mb-3">Araçlar: MSC ADAMS Car, SolidWorks</div>
+                    
+                            <p><b>Zorluk:</b><br> S14 aracı için çift salıncaklı süspansiyon kinematiğini tasarladım. Temel mekanik kısıtlama, dayanıklılık yarışlarının aşırı enerji koruma taleplerini kesin bir şekilde karşılarken, geometriyi önceki nesle kıyasla daraltılmış iz genişliğine uyarlamaktı.</p>
+                            <p><b>Kinematik Optimizasyon:</b> <br>MSC ADAMS/Car üzerinde kapsamlı Çoklu Cisim Dinamiği (MBD) simülasyonları gerçekleştirdim. Daha dar iz genişliğinin paketleme kısıtlamalarını çözmek ve süspansiyon hareketi sırasında agresif açı değişimlerini önlemek için süspansiyon bağlantı noktalarını yinelemeli olarak ayarladım.</p>
+                            <p><b>Etki:</b><br> Bump steer'i (tekerlek izleme açısı değişimi) başarıyla en aza indirdim ve tam tekerlek hareketi boyunca dinamik kamberi optimize ettim. Bu geometrik hassasiyet, tekerlek sürtünmesini önledi, yuvarlanma direncini ciddi şekilde azalttı ve doğrudan aracın genel enerji verimliliğini maksimize etti.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                <img src="assets/img/2-1.png" alt="S14 Kinematics 1" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                <img src="assets/img/2-2.png" alt="S14 Kinematics 2" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                <img src="assets/img/2-3.png" alt="S14 Kinematics 3" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                <img src="assets/img/2-4.png" alt="S14 Kinematics 4" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Elektrikli Hub Motor Rulman Ömrü Değerlendirmesi</h3>
+                            <div class="subheading mb-3">Araçlar: OptimumLap, SKF Simpro Quick, Matlab, Python</div>
+                            <p><b>Araştırma:</b> Güneş enerjili dayanıklılık yarışları için elektrikli hub motor rulmanlarının gerçek dünya hizmet ömrünü araştırdım. Bu çalışma, şu anda bilimsel bir dergide yayınlanmak üzere hakem değerlendirmesinde olan akademik bir makalenin temelini oluşturmaktadır.</p>
+                            <p><b>Modelleme ve Pist Doğrulaması:</b> ISO 281 standartlarına göre teorik hız ve ivme profillerini hesaplamak için OptimumLap üzerinde Albi Eco Race pistinin haritasını çıkardım. Simüle edilmiş bir turu canlı GPS telemetrisiyle başarıyla senkronize ettim. Gelişmiş sinyal filtreleme ve veri işleme için MATLAB kullanarak, strain gauge'lerden gerçek dünya dinamik yüklerini elde ettim.</p>
+                            <p><b>Bulgular ve Optimizasyon:</b> İşlenen telemetri, standart teorik modellerin öngöremediği—özellikle viraj tepe noktalarında (apex) meydana gelen yanal kuvvetler gibi—kritik dinamik yük artışlarını ortaya çıkardı. Araç verimliliğini kesin bir şekilde en üst düzeye çıkarırken bu yüklere karşı koymak için, ağırlık cezası olmadan yuvarlanma direncini önemli ölçüde en aza indirecek ve hizmet ömrünü uzatacak hibrit seramik rulmanların kullanılmasını önerdim.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-3">
+                                <img src="assets/img/3-1.jpg" alt="Electric Hub Motor Bearing Life 1" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                                <img src="assets/img/3-2.png" alt="Electric Hub Motor Bearing Life 2" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Tekerlek Poyrası Tasarımı ve Verimlilik Test Standı</h3>
+                            <p class="mt-3"><b>Deneysel Test:</b> Değişken hızlı bir motorla tahrik edilen özel bir tambur test standı geliştirdim. Tekerlek grubunun dinamik güç kaybını ve yuvarlanma direncini deneysel olarak ölçtüm.</p>
+                            <p><b>Mekanik Optimizasyon:</b> Canlı güç verileri, yüksek iç sürtünmenin rulmanın sıkı toleranslarından kaynaklandığını kanıtladı. Mevcut poyrayı kaymalı geçme (slip-fit) rulman toleransı uygulayarak modifiye ettim ve yuvarlanma direncini ciddi şekilde düşürdüm. Kaymalı geçme rulmanı güvenli bir şekilde sabitlemek için, Solar Team Solaris'in süspansiyon alt grubu ile özel bir mekanik tutucu plaka tasarlayıp entegre ettim.</p>
+                            <p><b>Stratejik Karar:</b> Sıfırdan tamamen yeni, hafif bir poyra tasarlamış olmamıza rağmen, test verileri stratejik bir karara yönlendirdi. Mevcut poyradaki slip-fit revizyonu yeterli verimlilik kazançları sağlayarak, yeni tasarımın maliyetli üretimini gereksiz kıldı. Veriye dayalı bu strateji, proje zaman çizelgesi ve bütçe kısıtlamalarını kesin bir şekilde karşılarken araç enerji korumasını maksimize etti.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2023</span>
+                            <div class="d-flex gap-2">
+                                <img src="assets/img/4-2.png" alt="Wheel Hub Design 2" class="rounded shadow-sm" style="width: 240px; height: 328px; object-fit: cover;" />
+                                <div class="d-flex flex-column gap-2">
+                                    <img src="assets/img/4-1.jpg" alt="Wheel Hub Design 1" class="rounded shadow-sm" style="width: 240px; height: 160px; object-fit: cover;" />
+                                    <img src="assets/img/4-3.png" alt="Wheel Hub Design 3" class="rounded shadow-sm" style="width: 240px; height: 160px; object-fit: cover;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">EV Güç Aktarım Simülasyonu ve Enerji Yönetimi (Simulink)</h3>
+                            <div class="subheading mb-3">Kullanılan Teknolojiler: MATLAB / Simulink</div>
+                            <p><b>Bağlam:</b> "Hibrit ve Elektrikli Araç Teknolojisi" dersi için kapsamlı bir bitirme projesi olarak geliştirildi.</p>
+                            <p><b>Hedef:</b> Ders müfredatında verilen belirli sürüş çevrimleri altında güç aktarım organı gereksinimlerini ve batarya bozunma özelliklerini analiz etmek için 4x4 elektrikli mini bir araç için dinamik bir simülasyon modeli tasarladım.</p>
+                            <p><b>Sistem Modellemesi:</b> Boylamasına araç dinamiğini (aerodinamik sürüklenme, yuvarlanma direnci) ayrıntılı bir elektriksel alanla entegre eden kapsamlı bir "flat-map" Simulink modeli kurdum. Model, gerçek zamanlı batarya davranışını izlemek için Açık Devre Voltajı (OCV) ve İç Direnç (R) gibi SOC'ye (Şarj Durumu) bağlı fonksiyonları işledi.</p>
+                            <p><b>Teknik Analiz:</b> Motor tork/güç talepleri, batarya Şarj Durumu (SOC) tüketimi ve voltaj verimliliği gibi kritik performans metriklerini hesapladım.</p>
+                            <p><b>Rejeneratif Frenleme:</b> Yavaşlama fazları sırasında EV sisteminin enerji geri kazanım yeteneklerini ölçmek için, tekerleklerdeki rejeneratif enerji potansiyelini değerlendiren matematiksel bir alt model entegre ettim.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2024</span>
+                            <div class="d-flex flex-column gap-3">
+                                <img src="assets/img/5-1.png" alt="EV Powertrain Simulation 1" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                                <img src="assets/img/5-2.png" alt="EV Powertrain Simulation 2" class="rounded shadow-sm" style="width: 480px; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">2B Kafes (Truss) Sisteminin Yapısal Analizi (ANSYS APDL)</h3>
+                            <div class="subheading mb-3">Kullanılan Teknolojiler: ANSYS APDL (Mechanical APDL)</div>
+                            <p><b>Bağlam:</b> "Sonlu Elemanlar Yöntemine Giriş" dersi için yüksek doğruluklu bir bitirme projesi olarak geliştirildi.</p>
+                            <p><b>Hedef:</b> Statik yükleme koşulları altında yapısal bütünlüğünü değerlendirmek için 2 boyutlu bir kafes taşıyıcı sistem tasarlayıp analiz ettim, sayısal Sonlu Elemanlar Analizi (FEA) sonuçlarını analitik el hesaplamalarıyla karşılaştırdım.</p>
+                            <p><b>FEA Metodolojisi:</b> Sistemin rijitlik matrisini oluşturmak için BEAM188 elemanlarını kullandım. APDL ortamında kesin malzeme özelliklerini (E, ν) ve kesit geometrilerini tanımladım. Gerçek dünya yapısal kısıtlamalarını simüle etmek için sınır koşulları ve düğümsel kuvvetler uyguladım.</p>
+                            <p><b>Sonuçlar ve Doğrulama:</b> Düğümsel yer değiştirmeler ve eksenel gerilmeler üzerinde kapsamlı bir analiz gerçekleştirdim. Deformasyon modellerinde yüksek korelasyon sağlayarak ve sistemin güvenlik faktörünün mühendislik sınırları içinde olmasını garantileyerek, sayısal sonuçları teorik çözümlere karşı başarıyla doğruladım.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2025</span>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/6-1.png" alt="Truss Analysis 1" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/6-2.png" alt="Truss Analysis 2" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <img src="assets/img/6-3.png" alt="Truss Analysis 3" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                    <img src="assets/img/6-4.png" alt="Truss Analysis 4" class="rounded shadow-sm" style="width: 240px; height: 160px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">6 Eksenli Modüler Stewart Platformu Prototipi (Lisans Bitirme Projesi)</h3>
+                            <p class="mt-3"><b>Hibe ve Tanınma:</b> Proje Takım Lideri olarak TÜBİTAK 2209-A Ulusal Araştırma Hibesini (Proje No: 1919B012304192) almaya hak kazandım.</p>
+                            <p><b>Rol ve Liderlik:</b> Kapsamlı araştırma teklifini yazdım, proje bütçesini yönettim ve çok disiplinli bir takımı, kavramlaştırmadan fiziksel üretime kadar tam Ar-Ge döngüsü boyunca yönlendirdim.</p>
+                            <p><b>Kinematik ve Kontrol:</b> Platformun hareket çalışma alanını tanımlamak için MATLAB'de karmaşık ters kinematik algoritmaları geliştirdim. Kesin 6 Eksenli (6-DOF) yörünge takibi sağlamak için kontrol mimarisini Simulink'te modelledim ve simüle ettim.</p>
+                            <p><b>Uygulama:</b> SolidWorks'te tam mekanik tasarıma liderlik ettim, modüler bileşenlerin üretimini denetledim ve son montaj ile sistem entegrasyonunu gerçekleştirdim.</p>
+                        </div>
+                        <div class="flex-shrink-0 d-flex flex-column align-items-md-end ms-md-4 mt-4 mt-md-0">
+                            <span class="text-primary mb-3">2024</span>
+                            <div class="d-flex gap-2">
+                                <img src="assets/img/8-2.png" alt="Stewart Platform Prototype Main" class="rounded shadow-sm" style="width: 240px; height: 328px; object-fit: cover;" />
+                                <div class="d-flex flex-column gap-2">
+                                    <img src="assets/img/8-1.png" alt="Stewart Platform Prototype 1" class="rounded shadow-sm" style="width: 240px; height: 120px; object-fit: cover;" />
+                                    <img src="assets/img/7-1.png" alt="Stewart Platform Prototype 2" class="rounded shadow-sm" style="width: 240px; height: 200px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p2.jpg');"></div>
+            <section class="resume-section" id="professional-experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Profesyonel Deneyim</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Mekanik Bakım Mühendisi</h3>
+                            <div class="subheading mb-3">Johnson Electric (eski adıyla Stackpole International)</div>
+                            <p><b>Operasyonel Mükemmellik:</b> Özellikle küresel otomotiv devleri için OEM yağ pompalarının imalatına odaklanarak, yüksek hacimli otomotiv üretim hatları için kestirimci ve düzeltici bakım stratejilerini yönettim.</p>
+                            <p><b>Verimlilik Optimizasyonu:</b> Veriye dayalı sorun giderme yoluyla makine duruş sürelerini en aza indirmek ve genel fabrika verimliliğini artırmak için teknik müdahalelere öncülük ettim.</p>
+                            <p><b>Sistem Yönetimi:</b> Bir Tier-1 otomotiv tedarikçisi ortamında yedek parça envanterini takip etmek, bakım döngülerini planlamak ve sorunsuz teknik operasyonlar sağlamak için ERP sistemlerini kullandım.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Ekim 2022 – Haziran 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Talaşlı İmalat ve Ar-Ge Stajyeri</h3>
+                            <div class="subheading mb-3">Gera Vinç</div>
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-2"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>CNC programlama (G-kodu) ve ağır hizmet vinç bileşenleri için teknik resim okuma dahil olmak üzere yüksek hassasiyetli talaşlı imalat süreçlerinde uygulamalı deneyim kazandım.</li>
+                                <li><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Teorik tasarım ile atölye fizibilitesi arasındaki boşluğu doldurarak, yeni mekanik montajların geliştirme ve test aşamalarına yardımcı oldum.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Yaz 2024 & 2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Döküm Stajyeri</h3>
+                            <div class="subheading mb-3">Özen Döküm</div>
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-2"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Kalıp hazırlama, ergitme süreçleri ve döküm sonrası kalite kontrol döngülerine odaklanarak endüstriyel ölçekli döküm operasyonlarını gözlemledim.</li>
+                                <li><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Döküm hatası analizi ve katılaşma aşamalarının izlenmesi yoluyla malzeme davranışı ve yapısal bütünlük hakkında temel bir anlayış geliştirdim.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Yaz 2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="publications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Bilimsel Yayınlar ve Araştırmalar</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Güneş Enerjili Radyal Akılı Hub Motorlarda Bilyalı Rulmanların Hizmet Ömrü Tahmininin Gerçek Zamanlı Pist Verileri Kullanılarak Deneysel Doğrulaması</h3>
+                            <div class="subheading mb-3">Durum: Bilimsel Yayın İçin Hakem Değerlendirmesinde</div>
+                            <p><b>Rol:</b> Sorumlu ve İlk Yazar: Y. Balun | Ortak Yazarlar: B. Orhan, A. Gören (Danışman)</p>
+                            <p><b>Temel Katkı:</b> Teorik ISO 281 standartlarını gerçek dünya dinamik yük tepe noktalarıyla ilişkilendirmek için yüksek doğruluklu bir metodoloji geliştirildi. OptimumLap simülasyonlarını canlı GPS telemetrisi ve MATLAB filtrelenmiş strain-gauge (gerinim ölçer) verileriyle senkronize ederek, çalışma, rulman seçimini optimize etmek için viraj noktalarındaki (apex) kritik eksenel ve yanal kuvvetleri tanımlar.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Yarış İçi Telemetri Kullanılarak Güneş Enerjili Elektrikli Araç Süspansiyonlarının Dinamik Yük Doğrulaması</h3>
+                            <div class="subheading mb-3">Durum: Makale Yazım Aşamasında / Taslak Başlık</div>
+                            <p><b>Rol:</b> Sorumlu ve İlk Yazar: Y. Balun | Ortak Yazarlar: M. Kip, M. İzci, A. Gören (Danışman)</p>
+                            <p><b>Temel Katkı:</b> Güneş arabası yarış süspansiyon sistemleri için uçtan uca bir doğrulama döngüsü oluşturulması. Bu araştırma, MSC ADAMS (MBD) ve ANSYS'ten (FEA) deneysel pist doğrulamasına geçişe odaklanarak, sayısal stres tahminleri ile fiili yarış içi telemetri arasındaki varyansı sayısallaştırır.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Güneş Arabasında Kompozit Yaprak Yay Uygulamaları</h3>
+                            <div class="subheading mb-3">Durum: Yayınlanmış Makale (Putech Composites, Sayı 75)</div>
+                            <p><b>Rol:</b> Teknik katkılardan dolayı resmi olarak teşekkür edilmiştir | Yazarlar: G. D. Özdeniz, A. Gören</p>
+                            <p><b>Katkı:</b> Güneş enerjili yarış araçlarında kompozit süspansiyon elemanlarının entegrasyonu ve performans analizi için teknik içgörüler ve mühendislik desteği sağlandı.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Solaris 13 Güneş Arabası Tasarımı ve Enerji Tüketimi Optimizasyonu</h3>
+                            <div class="subheading mb-3">Durum: Lisans Tezi Katkısı (Resmi Olarak Teşekkür Edilmiştir)</div>
+                            <p><b>Rol:</b> Teknik Danışman ve Test Standı Geliştiricisi | Yazar: B. İpek | Danışman: A. Gören</p>
+                            <p><b>Katkı:</b> Kritik veri alımı için kullanılan özel fiziksel test standını tasarladım ve ürettim. Solaris 13 aracının enerji optimizasyon stratejilerini desteklemek için tasarım fizibilitesi danışmanlığı ve teknik doğrulama sağladım.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p3.jpg');"></div>
+            <section class="resume-section" id="technical-skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Teknik Beceriler</h2>
+                    
+                    <div class="mb-5">
+                        <div class="subheading mb-3">CAD ve Yapısal Mühendislik</div>
+                        <p><img src="assets/img/SW.png" alt="SolidWorks" class="me-2" style="width: 60px; height: 60px; object-fit: contain; vertical-align: middle;"><b>SolidWorks:</b> Gelişmiş Parça Tasarımı, Karmaşık Montajlar ve Teknik Resim (GD&T).</p>
+                        <p><img src="assets/img/catia.png" alt="Catia V5" class="me-2" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;"><b>Catia V5:</b> Temel Katı Parça Modelleme.</p>
+                        <p><img src="assets/img/ansys.png" alt="ANSYS" class="me-2" style="width: 54px; height: 54px; object-fit: contain; vertical-align: middle;"><b>ANSYS (Workbench, APDL & Granta Selector):</b> Statik Yapısal ve Rijit Dinamik simülasyonları; Mechanical APDL aracılığıyla script tabanlı FEA modelleme ve gelişmiş malzeme seçimi.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="subheading mb-3">Araç Dinamiği ve Yarış Stratejisi</div>
+                        <p><img src="assets/img/optimum.svg" alt="OptimumLap" class="me-2" style="width: 54px; height: 54px; object-fit: contain; vertical-align: middle;"><b>OptimumLap:</b> Dayanıklılık yarışları için tam pist enerji tüketimi profili çıkarma, dinamik ivmelenme haritalaması ve stratejik optimizasyon.</p>
+                        <p><img src="assets/img/adams.png" alt="MSC ADAMS" class="me-2" style="width: 54px; height: 54px; object-fit: contain; vertical-align: middle;"><b>MSC ADAMS / Car:</b> Süspansiyon kinematiği ve çoklu cisim dinamiği (MBD) analizi.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="subheading mb-3">Programlama ve Veri Bilimi</div>
+                        <p><i class="fab fa-python text-primary me-1" style="font-size: 36px; vertical-align: middle;"></i> <img src="assets/img/matlab.png" alt="MATLAB" class="me-2" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;"><b>Python ve MATLAB Entegrasyonu:</b> Gelişmiş sinyal işleme ve kontrol algoritmaları geliştirme. Otomatikleştirilmiş, yüksek verimli veri işleme ve platformlar arası grafiksel görselleştirme için MATLAB çekirdeği ile Python kullanımı.</p>
+                        <p><img src="assets/img/simulink.png" alt="Simulink" class="me-2" style="width: 36px; height: 36px; object-fit: contain; vertical-align: middle;"><b>Simulink & Simscape:</b> Model tabanlı sistem mühendisliği ve EV (Elektrikli Araç) güç aktarım simülasyonları.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="subheading mb-3">Enstrümantasyon ve Veri Toplama (DAQ)</div>
+                        <p><i class="fas fa-plug text-primary me-2" style="font-size: 28px; vertical-align: middle;"></i><b>Sensör Uygulaması ve Kablolama:</b> Dinamik yük ölçümü için titiz yüzey hazırlığı, yapıştırma ve özel fiziksel kablolama dahil olmak üzere hassas Strain Gauge (Gerinim Ölçer) uygulamasında pratik uzmanlık.</p>
+                        <p><i class="fas fa-microchip text-primary me-2" style="font-size: 28px; vertical-align: middle;"></i><b>DAQ Sistem Entegrasyonu:</b> Veri toplama donanımının araç bileşenlerine uçtan uca fiziksel entegrasyonu. Güç dağıtımı, sensör bağlantısı ve döngüde donanım (HIL) kurulumlarını yönetmede yetkinlik.</p>
+                        <p><i class="fas fa-chart-line text-primary me-2" style="font-size: 28px; vertical-align: middle;"></i><b>Veri İşleme ve Yorumlama:</b> Ham pist telemetrisini çıkarma ve gelişmiş sinyal filtreleme ve veri korelasyonu (MATLAB/Python) yoluyla fiziksel sinyalleri eyleme dönüştürülebilir mühendislik içgörülerine dönüştürme.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-divider" style="background-image: url('assets/img/p4.jpg');"></div>
+            <section class="resume-section" id="courses">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Öne Çıkan Akademik Dersler</h2>
+                    <div class="subheading mb-4">Dokuz Eylül Üniversitesi · Makine Mühendisliği</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Hibrit ve Elektrikli Araç Teknolojisi</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Sonlu Elemanlar Yöntemine Giriş</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>İçten Yanmalı Motorlar</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="fa-ul mb-0">
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Kompozit Üretim Teknolojisi</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Yakıtlar ve Yanma</li>
+                                <li class="mb-3"><span class="fa-li"><i class="fas fa-caret-right text-primary"></i></span>Motorlu Taşıtların Temel İlkeleri</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Sertifikalar ve Lisanslar</h2>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">CSWA: Sertifikalı SOLIDWORKS Uzmanı – Mekanik Tasarım</h3>
+                            <div class="subheading mb-3">Veren Kurum: Dassault Systèmes</div>
+                            <p>3B katı modelleme, gelişmiş montaj yönetimi ve endüstri standardı mühendislik teknik resmi (GD&T) konularındaki uzmanlığı doğrular.</p>
+                            <a href="assets/cswa.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>Sertifikayı Görüntüle</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">CSWA-S: Sertifikalı SOLIDWORKS Uzmanı – Simülasyon</h3>
+                            <div class="subheading mb-3">Veren Kurum: Dassault Systèmes</div>
+                            <p>Gerilme (Stress), Gerinim (Strain) ve Güvenlik Faktörü (FoS) değerlendirmesi dahil olmak üzere Sonlu Elemanlar Analizi (FEA) metodolojilerindeki profesyonel yeterliliği doğrular.</p>
+                            <a href="assets/cswas.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>Sertifikayı Görüntüle</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IELTS Akademik</h3>
+                            <div class="subheading mb-3">Veren Kurum: British Council</div>
+                            <p>7.0 Genel Bant Puanı (Overall Band Score) elde edilmiştir.</p>
+                            <a href="assets/ielts.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>Sertifikayı Görüntüle</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">TOSFED C Sınıfı Gözetmen Lisansı</h3>
+                            <div class="subheading mb-3">Veren Kurum: Türkiye Otomobil Sporları Federasyonu (TOSFED)</div>
+                            <p>Onaylanmış motor sporları etkinliklerinde teknik gözetmenlik ve pist görevliliği için resmi ulusal lisans.</p>
+                            <a href="assets/tosfed.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2 fw-semibold"><i class="fas fa-external-link-alt me-2"></i>Lisansı Görüntüle</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
