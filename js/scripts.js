@@ -31,4 +31,32 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Easter Egg Logic
+    const easterEggTrigger = document.getElementById('easter-egg-trigger');
+    const izolasyonModal = document.getElementById('izolasyon-modal');
+
+    if (easterEggTrigger && izolasyonModal) {
+        let clickCount = 0;
+        let clickTimer;
+
+        easterEggTrigger.addEventListener('click', () => {
+            clickCount++;
+            if (clickCount === 1) {
+                clickTimer = setTimeout(() => {
+                    clickCount = 0; // 2 saniye dolarsa sayacı sıfırla
+                }, 2000);
+            }
+            if (clickCount === 5) {
+                clearTimeout(clickTimer);
+                clickCount = 0;
+                izolasyonModal.style.display = 'flex'; // Modal penceresini görünür yap
+            }
+        });
+
+        // Modala tıklandığında pencereyi kapat
+        izolasyonModal.addEventListener('click', () => {
+            izolasyonModal.style.display = 'none';
+        });
+    }
+
 });
